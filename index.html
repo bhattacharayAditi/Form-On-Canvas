@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form-on-canvas</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <canvas id="canvas"></canvas>
+  <div id="container" class="container">
+    <div class="content">
+      <div class="header">
+
+        <!-- Form Start | Header -->
+        <h2>Customer Enquiry</h2>
+      </div>
+      <form id="form" class="form">
+
+        <!-- Username validation-->
+
+        <div class="form-control">
+          <label for="username">Username:</label>
+          <input type="text" placeholder="aditibhattacharya" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <!--Email Address Validation-->
+
+        <div class="form-control">
+          <label for="username">Email Address:</label>
+          <input type="email" placeholder="abc@gmail.com" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <!-- Phone Number Validation -->
+
+        <div class="form-control">
+          <label for="username">Phone Number:</label>
+          <input type="tel" placeholder="Mobile Number" id="phnumber" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <!--Company Name -->
+
+        <div class="form-control">
+          <label for="username">Company Name:</label>
+          <input type="text" placeholder="Ahex Technologies" id="cmpname" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <!--button div opening-->
+        <div>
+          <button class="btn btn-light" style="font-weight: 900;">Submit</button>
+        </div>
+        <div>
+          <button id="clear" onclick="myfunction()" class="btn btn-light" style="font-weight: 900;">Reset</button>
+        </div>        
+        
+        </form>
+    </div>
+  </div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.1/ocanvas.min.js'>
+  </script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
